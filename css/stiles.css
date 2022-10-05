@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Header*/
+
+.header {
+    background-color: rgba(190, 135, 252, 0.63);
+    padding: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+
+.btnremeras {
+    color: white;
+    background-color: rgb(234, 0, 255);
+    border-radius: 9px;
+    padding: 8px 8px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0, 3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btnremeras:hover {
+    background-color: rgb(157, 0, 172);
+}
+
+.btnremeras:active{
+    background-color: rgb(92, 1, 100);
+}
+
+.header__title {
+    text-align: center;
+}
+
+.header__nav ul {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+@media(min-width:768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__nav {
+        width: 50%;
+    }
+}
+
+/* PORTADA */
+
+.portada {
+    height: 100vh;
+    background-image: url(../ropa/nike.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada__texto {
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+/*Mas vendidos*/
+.ropa__exito {
+    background-color: rgb(190, 135, 252);
+    padding: 15px;
+    text-align: center;
+}
+
+.tarjeta {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 180px;
+    padding: 10px;
+
+    display: flex;
+
+}
+
+@media(min-width:768px) {
+    .slider {
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        overflow: auto;
+    }
+
+}
+
+.tarjeta__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.tarjeta__img {
+    width: 55%;
+}
